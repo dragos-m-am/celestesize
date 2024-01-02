@@ -6,7 +6,6 @@ langdetect==1.0.9
 langsmith==0.0.70
 
 openai==0.28.1
-openpyxl @ file:///tmp/build/80754af9/openpyxl_1598113097404/work
 
 pandas==2.0.3
 time
