@@ -1,11 +1,7 @@
 
-langchain==0.0.330
-langchain-community==0.0.3
-langchain-core==0.1.0
-langdetect==1.0.9
-langsmith==0.0.70
-
-openai==0.28.1
-
-pandas==2.0.3
+langchain
+langchain-community
+langchain-core
+langdetect
+openai
 time
