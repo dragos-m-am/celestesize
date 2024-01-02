@@ -1,7 +1,7 @@
-
 langchain
-langchain-community
-langchain-core
-langdetect
+unstructured
+pandas
+chromadb
+tiktoken
 openai
 time
