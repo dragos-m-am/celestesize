@@ -32,10 +32,10 @@ from langchain.text_splitter import RecursiveCharacterTextSplitter
 #st.title('Size Helper')
 st.image("AM_logo2.png",  width = 310)
 st.write("Hi, I am CelesteSize, your virtual assistant to help with bra size selection. Ask me a question below and I will try to be as useful as i can! Have patience with me, I was born in 1 day, not in 9 months and it was painful. ")
-openai_api_key='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'
+openai_api_key='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'
 
 import os
-os.environ['OPENAI_API_KEY'] = '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'
+os.environ['OPENAI_API_KEY'] = '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'
 
 
 SysMessage = SystemMessage(content='''
