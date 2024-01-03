@@ -1,4 +1,5 @@
 import streamlit as st
+#from langchain.llms import OpenAI
 from langchain.chat_models import ChatOpenAI
 from langchain.schema import HumanMessage, SystemMessage
 import time
@@ -32,10 +33,22 @@ from langchain.text_splitter import RecursiveCharacterTextSplitter
 #st.title('Size Helper')
 st.image("AM_logo2.png",  width = 310)
 st.write("Hi, I am CelesteSize, your virtual assistant to help with bra size selection. Ask me a question below and I will try to be as useful as i can! Have patience with me, I was born in 1 day, not in 9 months and it was painful. ")
-openai_api_key='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'
+# or choose one of the precanned questions
+
+option = st.selectbox(
+    label='Some questions to help you get started',
+    options=('What are the steps to measure my bra size at home?',
+     'What do I do when I experience gaping?',
+     'What do I do when I experience spillage?',
+     'What do I do if I am wearing my straps too tight?',
+     'Give me some pro tips to find my perfect size',
+     'Give me a resource where I get all of this explained'),
+     index=None)
+
+openai_api_key='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'
 
 import os
-os.environ['OPENAI_API_KEY'] = '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'
+os.environ['OPENAI_API_KEY'] = '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'
 
 
 SysMessage = SystemMessage(content='''
@@ -76,17 +89,7 @@ for message in st.session_state.messages:
     with st.chat_message(message["role"]):
         st.markdown(message["content"])
 
-# or choose one of the precanned questions
 
-option = st.selectbox(
-    label='Some questions to help you get started',
-    options=('What are the steps to measure my bra size at home?',
-     'What do I do when I experience gaping?',
-     'What do I do when I experience spillage?',
-     'What do I do if I am wearing my straps too tight?',
-     'Give me some pro tips to find my perfect size',
-     'Give me a resource where I get all of this explained'),
-     index=None)
 
 
 if option:
