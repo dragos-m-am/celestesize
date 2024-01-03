@@ -45,10 +45,10 @@ option = st.selectbox(
      'Give me a resource where I get all of this explained'),
      index=None)
 
-openai_api_key='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'
+openai_api_key='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'
 
 import os
-os.environ['OPENAI_API_KEY'] = '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'
+os.environ['OPENAI_API_KEY'] = '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'
 
 
 SysMessage = SystemMessage(content='''
