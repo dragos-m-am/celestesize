@@ -45,10 +45,10 @@ option = st.selectbox(
      'Give me a resource where I get all of this explained'),
      index=None)
 
-openai_api_key='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'
+openai_api_key=st.secrets["open_ai"]
 
 import os
-os.environ['OPENAI_API_KEY'] = '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'
+os.environ['OPENAI_API_KEY'] = st.secrets["open_ai"]
 
 
 SysMessage = SystemMessage(content='''
